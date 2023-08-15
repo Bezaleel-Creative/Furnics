@@ -20,30 +20,33 @@
 </head>
 <body class="bg-body-secondary">
     
-    <header class="site-header container-fluid px-3" >
+    <header class="site-header container-fluid mt-0 pt-2 py-md-0 px-0 mx-0 position-fixed z-3 top-0 bg-body-tertiary" >
         <nav class="navbar navbar-expand-md">
-            <div class="container-fluid d-flex">
+            <div class="container-fluid d-flex " >
                 <a href="index.html" class="col-md-5">
                     <img src="/images/main-logo.png" alt="" width="100%" class="logo-image">
                 </a>
-                <button class="navbar-toggler-icon navbar-toggler btn-outline-info border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <button class="shadow-none navbar-toggler p-0 m-0 border-0 navBtn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" title="navBtn1 open">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                 </button>
 
                   
-                <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas offcanvas-end w-75 pt-1" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" >
                     <div class="offcanvas-header">
                         <a href="index.html">
                             <img src="/images/main-logo.png" alt="" width="100%" class="logo-image">
                         </a>
-                      <button type="button" class="btn-close btn-outline-info" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"></button>
+                      <button type="button" class="shadow-none btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" ></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="nav d-md-flex flex-nowrap d-grid justify-content-start justify-content-md-end w-100 nav-links">
                             <li class="nav-link"><a href="" class="text-decoration-none">HOME</a></li>
                             <li class="nav-link"><a href="#about-us" class="text-decoration-none text-nowrap">ABOUT US</a></li>
-                            <li class="nav-link"><a href="#shop-now" class="text-decoration-none">SHOP</a></li>
+                            <li class="nav-link"><a href="#buy" class="text-decoration-none">SHOP</a></li>
                             <li class="nav-link"><a href="#blog" class="text-decoration-none">BLOG</a></li>
-                            <li class="nav-link"><a href="" class="text-decoration-none">PAGES</a></li>
+                            <li class="nav-link"><a href="#shopping" class="text-decoration-none">PAGES</a></li>
                             <li class="nav-link d-flex justify-content-between social">
                                 <a href="" class="text-decoration-none"><i class="fa-solid fa-magnifying-glass"></i></a>
                                 <a href="" class="text-decoration-none"><i class="fa-solid fa-user"></i></a>
@@ -56,20 +59,21 @@
         
     </header>
 
-    <section class="hero my-5">
+    <section class="hero my-1 my-md-3">
+        <div class="m-5"></div>
         <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
             <swiper-slide>
-                <div class="container-fluid">
+                <div class="container-fluid m-0 p-0 p-md-3">
                     <div class="row">
                         <div class="col-md-12">
-                            <div style="background-image: url(/images/banner-image1.jpg); background-repeat: no-repeat; height: 380px; background-position: right; background-size: 560px;">
+                            <div class="hero-one">
                                 
-                                <div class="banner-content pt-2">
-                                    <h1 class="text-uppercase fw-light display-2 mt-4">Comfortable sofa set</h1>
+                                <div class="banner-content pt-0 pt-md-2 px-2 px-md-0">
+                                    <h1 class="text-uppercase fw-light display-2 mt-0 mt-md-4">Comfortable sofa set</h1>
 
-                                    <p class="fw-normal text-break col-sm-6 pb-3" style="font-size: 12px; text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus libero impedit asperiores eos vero id. Mollitia magnam recusandae maiores doloremque nemo incidunt esse ratione ut expedita error explicabo! Fuga dignissimos esse odit, velit ullam sint ipsum. Earum, est?</p>
+                                    <p class="fw-normal text-break col-sm-6 pb-1 pb-md-3" style="font-size: 12px; text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus libero impedit asperiores eos vero id. Mollitia magnam recusandae maiores doloremque nemo incidunt esse ratione ut expedita error explicabo! Fuga dignissimos esse odit, velit ullam sint ipsum. Earum, est?</p>
 
-                                    <a class="text-decoration-none mt-3" href="shop.html" id="shop-now">
+                                    <a class="text-decoration-none mt-0 mt-md-3" href="#shopping" id="shop-now">
                                         <button class="btn rounded-0 text-uppercase text-white fs-6 px-4 py-2 " style="background-color: rgb(94, 136, 122); width: fit-content;"><span style="font-size: 14px;" id="shop">shop now</span><i class="fa-solid fa-arrow-right ms-2" style="color: #ffffff;font-size: 10px;" id="forward-arrow"></i></button>
                                     </a>
                                 </div>
@@ -80,15 +84,15 @@
                 </div>
             </swiper-slide>
             <swiper-slide>
-                <div class="container-fluid">
+                <div class="container-fluid m-0 p-0 p-md-3">
                     <div class="row">
                         <div class="col-md-12">
-                            <div style="background-image: url(/images/banner-image1.jpg); background-repeat: no-repeat; height: 380px; background-position: right; background-size: 560px;">
+                            <div class="hero-one">
                                 
-                                <div class="banner-content pt-2">
-                                    <h1 class="text-uppercase fw-light display-2 mt-4">wooden table set</h1>
+                                <div class="banner-content pt-0 pt-md-2 px-2 px-md-0">
+                                    <h1 class="text-uppercase fw-light display-2 mt-0 mt-md-4">wooden table set</h1>
 
-                                    <p class="fw-normal text-break col-md-6 pb-3" style="font-size: 12px; text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus libero impedit asperiores eos vero id. Mollitia magnam recusandae maiores doloremque nemo incidunt esse ratione ut expedita error explicabo! Fuga dignissimos esse odit, velit ullam sint ipsum. Earum, est?</p>
+                                    <p class="fw-normal text-break col-sm-6 pb-3" style="font-size: 12px; text-align: justify;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus libero impedit asperiores eos vero id. Mollitia magnam recusandae maiores doloremque nemo incidunt esse ratione ut expedita error explicabo! Fuga dignissimos esse odit, velit ullam sint ipsum. Earum, est?</p>
 
                                     <a class="text-decoration-none mt-3" href="shop.html" id="shop-now">
                                         <button class="btn rounded-0 text-uppercase text-white fs-6 px-4 py-2 " style="background-color: rgb(94, 136, 122); width: fit-content;"><span style="font-size: 14px;" id="shop">shop now</span><i class="fa-solid fa-arrow-right ms-2" style="color: #ffffff;font-size: 10px;" id="forward-arrow"></i></button>
@@ -103,7 +107,8 @@
           </swiper-container>
     </section>
 
-    <section class="services py-3 my-5">
+    <section class="services pt-3 px-3">
+        <div class="m-5"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-12 mb-3 mb-md-0 gap-2 p-0">
@@ -142,7 +147,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 mb-3 mb-md-0 gap-2 p-0">
+                <div class="col-md-3 col-sm-6 col-12 mb-md-0 gap-2 p-0">
                   <div class="container-fluid">
                     <div class="row d-flex align-items-center">
                         <div class="col-md-5 col-5 rounded-circle border border-1 border-black d-flex justify-content-center align-items-center" style="width: 60px; height: 60px;">
@@ -159,10 +164,11 @@
     </section>
 
     <section class="about-us py-3 my-5" id="about-us">
+        <div class="m-5"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="" style="background-image: url(/images/post-thumb-image3.jpg); background-repeat: no-repeat; background-size: 450px; height: 85vh; background-attachment: fixed;"></div>
+                    <div class="about-image" ></div>
                 </div>
                 <div class="col-md-6">
                     <div class="about-us-content px-md-4 py-3">
@@ -173,7 +179,7 @@
                             <br>
                             Facilisi ut vulputate volutpat a aliquet. Facilisis sed quis pretium amet hac. Justo tristique sagittis sodales viverra venenatis integer fringilla.
                         </p>
-                        <a class="text-decoration-none mt-3" href="shop.html" id="shop-now">
+                        <a class="text-decoration-none mt-3" href="" id="shop-now">
                             <button class="btn btn-outline-white rounded-0 text-uppercase text-white fs-6 px-4 py-2 " style="border-color: rgb(94, 136, 122); width: fit-content;"><span style="font-size: 14px; color: rgb(94, 136, 122);" id="shop">ABOUT US</span><i class="fa-solid fa-arrow-right ms-2" style="color: rgb(94, 136, 122);font-size: 10px;" id="forward-arrow"></i></button>
                         </a>
                     </div>
@@ -182,7 +188,8 @@
         </div>
     </section>
 
-    <section class="product py-3 my-5" id="shop-now">
+    <section class="product pt-3 mt-5 pb-3" id="buy">
+        <div class="m-5"></div>
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-10">
@@ -201,9 +208,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item1.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">black sofa set</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">black sofa set</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -216,9 +223,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item2.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">circle dinning table</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">circle dinning table</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -231,9 +238,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item3.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">minimal sofa</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">minimal sofa</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -246,9 +253,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item4.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">pattern tea table</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">pattern tea table</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -261,9 +268,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item5.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">black sofa set</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">black sofa set</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -276,9 +283,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item6.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">minimal sofa</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">minimal sofa</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -291,7 +298,8 @@
         </div>
     </section>
 
-    <section class="quotes my-5">
+    <section class="quotes p-0 pb-3 mx-0">
+        <div class="m-5"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
@@ -336,7 +344,8 @@
         </div>
     </section>
 
-    <section class="catalogues py-3 my-5">
+    <section class="catalogues pb-3 mx-2">
+        <div class="m-5"></div>
         <div class="container-fluid m-0 p-0">
             <div class="row m-0 p-0 ">
                 <div class="col-md-12 m-0 p-0">
@@ -439,11 +448,12 @@
         </div>
     </section>
 
-    <section class="subscribe py-3 my-5">
+    <section class="subscribe pb-3">
+        <div class="m-5"></div>
         <div class="container-fluid py-2">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card w-75 px-md-5 px-0 m-auto bg-transparent border-0">
+                    <div class="sub card px-md-5 px-0 m-auto bg-transparent border-0">
                         <div class="card-body">
                             <h2 class="fw-normal text-uppercase text-start pb-2 m-0">Get offers & discounts by subscribing us</h2>
                             <input type="email" name="email" class="w-100 py-2 px-3 border-0 my-2" id="email" placeholder="Enter your email address">
@@ -455,7 +465,8 @@
         </div>
     </section>
 
-    <section class="products py-3 my-5">
+    <section class="products pt-3 mt-5" id="shopping">
+        <div class="m-5"></div>
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-10">
@@ -474,9 +485,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item1.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">black sofa set</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0  m-0">black sofa set</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -489,9 +500,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item2.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">circle dinning table</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0  m-0">circle dinning table</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0  m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -504,9 +515,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item3.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">minimal sofa</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0  m-0">minimal sofa</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0  m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -519,9 +530,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item4.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">pattern tea table</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0  m-0">pattern tea table</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0  m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -534,9 +545,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item5.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">black sofa set</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0  m-0">black sofa set</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0  m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -549,9 +560,9 @@
                             <div class="product-image">
                                 <img src="/images/product-item6.jpg" alt="">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-0 m-0">minimal sofa</h6>
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0  m-0">minimal sofa</h6>
                             <div class="price-add p-0">
-                                <p class="fs-6 text-start fw-light p-0 m-0 price">
+                                <p class="fs-6 text-start fw-light p-1 p-md-0  m-0 price">
                                     $200
                                     <br>
                                     Add to cart
@@ -564,7 +575,8 @@
         </div>
     </section>
 
-    <section class="articles py-3 my-5" id="blog">
+    <section class="articles pt-3 mt-5" id="blog">
+        <div class="m-5"></div>
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-10">
@@ -577,7 +589,7 @@
                 </div>
             </div>
             <div class="container-fluid p-0">
-                <div class="row row-cols-1 row-cols-md-3 g-2">
+                <div class="row row-cols-1 row-cols-md-3 g-4 g-md-2">
                     <div class="col">
                       <div class="card h-100 rounded-0 bg-transparent border-0 p-0 m-0">
                         <img src="/images/post-item2.jpg" class="card-img-top  rounded-0" alt="...">
