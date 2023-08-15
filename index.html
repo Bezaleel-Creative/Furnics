@@ -12,6 +12,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
+    <!-- AOS On Scroll animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -26,10 +29,8 @@
                 <a href="index.html" class="col-md-5">
                     <img src="/images/main-logo.png" alt="" width="100%" class="logo-image">
                 </a>
-                <button class="shadow-none navbar-toggler p-0 m-0 border-0 navBtn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" title="navBtn1 open">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+                <button class="navbar-toggler-icon navbar navbar-toggler p-0 m-0 shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                       
                 </button>
 
                   
@@ -59,9 +60,9 @@
         
     </header>
 
-    <section class="hero my-1 my-md-3">
+    <section class="hero my-1 my-md-3" data-aos="fade-in" data-aos-duration="1500">
         <div class="m-5"></div>
-        <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
+        <swiper-container class="mySwiper" space-between="10" >
             <swiper-slide>
                 <div class="container-fluid m-0 p-0 p-md-3">
                     <div class="row">
@@ -107,11 +108,10 @@
           </swiper-container>
     </section>
 
-    <section class="services pt-3 px-3">
-        <div class="m-5"></div>
+    <section class="services pt-0 px-3">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-12 mb-3 mb-md-0 gap-2 p-0">
+                <div class="col-md-3 col-sm-6 col-12 mb-3 mb-md-0 gap-2 p-0" data-aos="fade-up" data-aos-duration="1000">
                   <div class="container-fluid">
                     <div class="row d-flex align-items-center">
                         <div class="col-md-5 col-5 rounded-circle border border-1 border-black d-flex justify-content-center align-items-center" style="width: 60px; height: 60px;">
@@ -123,7 +123,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 mb-3 mb-md-0 gap-2 p-0">
+                <div class="col-md-3 col-sm-6 col-12 mb-3 mb-md-0 gap-2 p-0" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
                   <div class="container-fluid">
                     <div class="row d-flex align-items-center">
                         <div class="col-md-5 col-5 rounded-circle border border-1 border-black d-flex justify-content-center align-items-center" style="width: 60px; height: 60px;">
@@ -135,7 +135,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 mb-3 mb-md-0 gap-2 p-0">
+                <div class="col-md-3 col-sm-6 col-12 mb-3 mb-md-0 gap-2 p-0" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                   <div class="container-fluid">
                     <div class="row d-flex align-items-center">
                         <div class="col-md-5 col-5 rounded-circle border border-1 border-black d-flex justify-content-center align-items-center" style="width: 60px; height: 60px;">
@@ -147,7 +147,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-12 mb-md-0 gap-2 p-0">
+                <div class="col-md-3 col-sm-6 col-12 mb-0 gap-2 p-0" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="150">
                   <div class="container-fluid">
                     <div class="row d-flex align-items-center">
                         <div class="col-md-5 col-5 rounded-circle border border-1 border-black d-flex justify-content-center align-items-center" style="width: 60px; height: 60px;">
@@ -167,19 +167,19 @@
         <div class="m-5"></div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" >
                     <div class="about-image" ></div>
                 </div>
                 <div class="col-md-6">
                     <div class="about-us-content px-md-4 py-3">
-                        <h1 class="text-uppercase fw-light display-3">ABOUT US</h1>
-                        <p class="fw-normal text-break pb-3" style="font-size: 12px; text-align: left;">
+                        <h1 class="text-uppercase fw-light display-3" data-aos="fade-up" data-aos-duration="1100">ABOUT US</h1>
+                        <p class="fw-normal text-break pb-3" style="font-size: 12px; text-align: left;" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="150">
                             Ac varius lectus tellus tellus quisque tristique aenean. Volutpat velit nulla eu iaculis risus in urna. Eu morbi vel purus velit dui vel egestas purus sed. Eget turpis tincidunt faucibus montes arcu in nullam tortor orci. Nulla tellus sed purus vestibulum sagittis pretium donec nec mattis ollis porta sit ut.
                             <br>
                             <br>
                             Facilisi ut vulputate volutpat a aliquet. Facilisis sed quis pretium amet hac. Justo tristique sagittis sodales viverra venenatis integer fringilla.
                         </p>
-                        <a class="text-decoration-none mt-3" href="" id="shop-now">
+                        <a class="text-decoration-none mt-3" href="" id="shop-now"  data-aos="fade-in" data-aos-duration="1500" data-aos-offset="50">
                             <button class="btn btn-outline-white rounded-0 text-uppercase text-white fs-6 px-4 py-2 " style="border-color: rgb(94, 136, 122); width: fit-content;"><span style="font-size: 14px; color: rgb(94, 136, 122);" id="shop">ABOUT US</span><i class="fa-solid fa-arrow-right ms-2" style="color: rgb(94, 136, 122);font-size: 10px;" id="forward-arrow"></i></button>
                         </a>
                     </div>
@@ -193,9 +193,9 @@
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-10">
-                    <h1 class="text-uppercase fw-light display-3">OUR FEATURED PRODUCTS</h1>
+                    <h1 class="text-uppercase fw-light display-3"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">OUR FEATURED PRODUCTS</h1>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
                     <a class="text-decoration-none mt-3" href="shop.html" id="shop-now">
                         <button class="btn rounded-0 text-uppercase text-white fs-6 py-2 " style="width: fit-content;"><span style="font-size: 14px; color: rgb(94, 136, 122);" id="shop">SHOP ALL</span><i class="fa-solid fa-arrow-right ms-2" style="color: rgb(94, 136, 122);font-size: 10px;" id="forward-arrow"></i></button>
                     </a>
@@ -206,10 +206,10 @@
                     <swiper-slide>
                         <div class="product-card">
                             <div class="product-image">
-                                <img src="/images/product-item1.jpg" alt="">
+                                <img src="/images/product-item1.jpg" alt=""  data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">black sofa set</h6>
-                            <div class="price-add p-0">
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">black sofa set</h6>
+                            <div class="price-add p-0"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
                                 <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
@@ -221,10 +221,10 @@
                     <swiper-slide>
                         <div class="product-card">
                             <div class="product-image">
-                                <img src="/images/product-item2.jpg" alt="">
+                                <img src="/images/product-item2.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">circle dinning table</h6>
-                            <div class="price-add p-0">
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">circle dinning table</h6>
+                            <div class="price-add p-0"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
                                 <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
@@ -236,10 +236,10 @@
                     <swiper-slide>
                         <div class="product-card">
                             <div class="product-image">
-                                <img src="/images/product-item3.jpg" alt="">
+                                <img src="/images/product-item3.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">minimal sofa</h6>
-                            <div class="price-add p-0">
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">minimal sofa</h6>
+                            <div class="price-add p-0"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
                                 <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
@@ -251,10 +251,10 @@
                     <swiper-slide>
                         <div class="product-card">
                             <div class="product-image">
-                                <img src="/images/product-item4.jpg" alt="">
+                                <img src="/images/product-item4.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">pattern tea table</h6>
-                            <div class="price-add p-0">
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">pattern tea table</h6>
+                            <div class="price-add p-0"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
                                 <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
@@ -266,10 +266,10 @@
                     <swiper-slide>
                         <div class="product-card">
                             <div class="product-image">
-                                <img src="/images/product-item5.jpg" alt="">
+                                <img src="/images/product-item5.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">black sofa set</h6>
-                            <div class="price-add p-0">
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">black sofa set</h6>
+                            <div class="price-add p-0" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
                                 <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
@@ -281,10 +281,10 @@
                     <swiper-slide>
                         <div class="product-card">
                             <div class="product-image">
-                                <img src="/images/product-item6.jpg" alt="">
+                                <img src="/images/product-item6.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                             </div>
-                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0">minimal sofa</h6>
-                            <div class="price-add p-0">
+                            <h6 class="fw-normal text-uppercase text-start mt-2 p-1 p-md-0 m-0"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">minimal sofa</h6>
+                            <div class="price-add p-0"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
                                 <p class="fs-6 text-start fw-light p-1 p-md-0 m-0 price">
                                     $200
                                     <br>
@@ -298,12 +298,12 @@
         </div>
     </section>
 
-    <section class="quotes p-0 pb-3 mx-0">
+    <section class="quotes p-0 pb-3 mx-0"  data-aos="fade-in" data-aos-duration="1500" data-aos-offset="200">
         <div class="m-5"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <swiper-container class="mySwiper" keyboard="true" loop="true" pagination="true" pagination-clickable="true" space-between="30"
+                    <swiper-container class="mySwiper" keyboard="true" loop="true" space-between="30"
                     centered-slides="true" autoplay-delay="8500" autoplay-disable-on-interaction="false">
                         <swiper-slide>
                             <div class="quote d-flex flex-column justify-content-center align-items-center" style="height: fit-content;">
@@ -353,9 +353,9 @@
                     <swiper-slide>
                         <div class="catalogue m-0 p-0  pb-5">
                             <div class="">
-                                <h5 class="fw-normal text-uppercase text-start pb-2 m-0">living rooms</h5>
+                                <h5 class="fw-normal text-uppercase text-start pb-2 m-0"  data-aos="fade-down" data-aos-duration="1500" data-aos-offset="200">living rooms</h5>
                             </div>
-                            <div class="image-info">
+                            <div class="image-info"  data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                                 <img class="cata-image" src="/images/product-item5.jpg" alt="">
                                 <div class="cata-info py-4 px-4">
                                     <h6 class="fw-normal text-uppercase text-start mt-2 p-0">about room</h6>
@@ -376,9 +376,9 @@
                     <swiper-slide>
                         <div class="catalogue m-0 p-0 pb-5">
                             <div class="">
-                                <h5 class="fw-normal text-uppercase text-start pb-2 m-0">Bed rooms</h5>
+                                <h5 class="fw-normal text-uppercase text-start pb-2 m-0"  data-aos="fade-down" data-aos-duration="1500" data-aos-offset="200">Bed rooms</h5>
                             </div>
-                            <div class="image-info">
+                            <div class="image-info" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                                 <img class="cata-image" src="/images/product-item6.jpg" alt="">
                                 <div class="cata-info py-4 px-4">
                                     <h6 class="fw-normal text-uppercase text-start mt-2 p-0">about room</h6>
@@ -399,9 +399,9 @@
                     <swiper-slide>
                         <div class="catalogue m-0 p-0 pb-5">
                             <div class="">
-                                <h5 class="fw-normal text-uppercase text-start pb-2 m-0">Kitchens</h5>
+                                <h5 class="fw-normal text-uppercase text-start pb-2 m-0"  data-aos="fade-down" data-aos-duration="1500" data-aos-offset="200">Kitchens</h5>
                             </div>
-                            <div class="image-info">
+                            <div class="image-info" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                                 <img class="cata-image" src="/images/product-item7.jpg" alt="">
                                 <div class="cata-info py-4 px-4">
                                     <h6 class="fw-normal text-uppercase text-start mt-2 p-0">about room</h6>
@@ -422,9 +422,9 @@
                     <swiper-slide>
                         <div class="catalogue m-0 p-0 pb-5">
                             <div class="">
-                                <h5 class="fw-normal text-uppercase text-start pb-2 m-0">guest rooms</h5>
+                                <h5 class="fw-normal text-uppercase text-start pb-2 m-0"  data-aos="fade-down" data-aos-duration="1500" data-aos-offset="200">guest rooms</h5>
                             </div>
-                            <div class="image-info">
+                            <div class="image-info" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="100">
                                 <img class="cata-image" src="/images/product-item8.jpg" alt="">
                                 <div class="cata-info py-4 px-4">
                                     <h6 class="fw-normal text-uppercase text-start mt-2 p-0">about room</h6>
@@ -448,7 +448,7 @@
         </div>
     </section>
 
-    <section class="subscribe pb-3">
+    <section class="subscribe pb-0"  data-aos="fade-up" data-aos-duration="1500" data-aos-offset="150">
         <div class="m-5"></div>
         <div class="container-fluid py-2">
             <div class="row">
@@ -457,7 +457,7 @@
                         <div class="card-body">
                             <h2 class="fw-normal text-uppercase text-start pb-2 m-0">Get offers & discounts by subscribing us</h2>
                             <input type="email" name="email" class="w-100 py-2 px-3 border-0 my-2" id="email" placeholder="Enter your email address">
-                            <button type="submit" class="btn btn-dark w-100 rounded-1 py-3" style="font-size: 10px;">SUBSCRIBE NOW</button>
+                            <button type="submit" class="btn btn-dark w-100 rounded-1 pt-3" style="font-size: 10px;">SUBSCRIBE NOW</button>
                         </div>
                     </div>
                 </div>
@@ -470,9 +470,9 @@
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-10">
-                    <h1 class="text-uppercase fw-light display-3">TRENDING PRODUCTS</h1>
+                    <h1 class="text-uppercase fw-light display-3"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">TRENDING PRODUCTS</h1>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" data-aos="fade-in" data-aos-duration="1500" data-aos-offset="100">
                     <a class="text-decoration-none mt-3" href="shop.html" id="shop-now">
                         <button class="btn rounded-0 text-uppercase text-white fs-6 py-2 " style="width: fit-content;"><span style="font-size: 14px; color: rgb(94, 136, 122);" id="shop">shop all</span><i class="fa-solid fa-arrow-right ms-2" style="color: rgb(94, 136, 122);font-size: 10px;" id="forward-arrow"></i></button>
                     </a>
@@ -480,7 +480,8 @@
             </div>
             <div class="row p-0 m-0">
                 <swiper-container class="mySwiper"  free-mode="true">
-                    <swiper-slide>
+                    <swiper-slide  data-aos="zoom-out" data-aos-duration="1500" data-aos-offset="50"
+                    data-aos-delay="200">
                         <div class="product-card">
                             <div class="product-image">
                                 <img src="/images/product-item1.jpg" alt="">
@@ -495,7 +496,8 @@
                             </div>
                         </div>
                     </swiper-slide>
-                    <swiper-slide>
+                    <swiper-slide data-aos="zoom-out" data-aos-duration="1500" data-aos-offset="50"
+                    data-aos-delay="200">
                         <div class="product-card">
                             <div class="product-image">
                                 <img src="/images/product-item2.jpg" alt="">
@@ -510,7 +512,8 @@
                             </div>
                         </div>
                     </swiper-slide>
-                    <swiper-slide>
+                    <swiper-slide data-aos="zoom-out" data-aos-duration="1500" data-aos-offset="50"
+                    data-aos-delay="200">
                         <div class="product-card">
                             <div class="product-image">
                                 <img src="/images/product-item3.jpg" alt="">
@@ -525,7 +528,8 @@
                             </div>
                         </div>
                     </swiper-slide>
-                    <swiper-slide>
+                    <swiper-slide data-aos="zoom-out" data-aos-duration="1500" data-aos-offset="50"
+                    data-aos-delay="200">
                         <div class="product-card">
                             <div class="product-image">
                                 <img src="/images/product-item4.jpg" alt="">
@@ -540,7 +544,8 @@
                             </div>
                         </div>
                     </swiper-slide>
-                    <swiper-slide>
+                    <swiper-slide data-aos="zoom-out" data-aos-duration="1500" data-aos-offset="50"
+                    data-aos-delay="200">
                         <div class="product-card">
                             <div class="product-image">
                                 <img src="/images/product-item5.jpg" alt="">
@@ -555,7 +560,8 @@
                             </div>
                         </div>
                     </swiper-slide>
-                    <swiper-slide>
+                    <swiper-slide data-aos="zoom-out" data-aos-duration="1500" data-aos-offset="50"
+                    data-aos-delay="200">
                         <div class="product-card">
                             <div class="product-image">
                                 <img src="/images/product-item6.jpg" alt="">
@@ -580,9 +586,9 @@
         <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-10">
-                    <h1 class="text-uppercase fw-light display-3">READ OUR ARTICLES</h1>
+                    <h1 class="text-uppercase fw-light display-3"  data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">READ OUR ARTICLES</h1>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2"  data-aos="fade-in" data-aos-duration="1500" data-aos-offset="100">
                     <a class="text-decoration-none mt-3" href="shop.html" id="shop-now">
                         <button class="btn rounded-0 text-uppercase text-white fs-6 py-2 " style="width: fit-content;"><span style="font-size: 14px; color: rgb(94, 136, 122);" id="shop">see all articles</span><i class="fa-solid fa-arrow-right ms-2" style="color: rgb(94, 136, 122);font-size: 10px;" id="forward-arrow"></i></button>
                     </a>
@@ -590,7 +596,7 @@
             </div>
             <div class="container-fluid p-0">
                 <div class="row row-cols-1 row-cols-md-3 g-4 g-md-2">
-                    <div class="col">
+                    <div class="col"  data-aos="flip-left" data-aos-duration="1300" data-aos-offset="50">
                       <div class="card h-100 rounded-0 bg-transparent border-0 p-0 m-0">
                         <img src="/images/post-item2.jpg" class="card-img-top  rounded-0" alt="...">
                         <div class="card-body bg-transparent px-0">
@@ -600,7 +606,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="flip-left" data-aos-duration="1300" data-aos-offset="50">
                       <div class="card h-100 rounded-0 bg-transparent border-0 p-0 m-0">
                         <img src="/images/post-item3.jpg" class="card-img-top  rounded-0" alt="...">
                         <div class="card-body bg-transparent px-0">
@@ -610,7 +616,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="flip-left" data-aos-duration="1300" data-aos-offset="50">
                       <div class="card h-100 rounded-0 bg-transparent border-0 p-0 m-0">
                         <img src="/images/post-item4.jpg" class="card-img-top  rounded-0" alt="...">
                         <div class="card-body bg-transparent px-0">
@@ -625,7 +631,7 @@
         </div>
     </section>
 
-    <section class="sponsor border border-1 border-start-0 border-end-0 py-3 my-5 m-md-5">
+    <section class="sponsor border border-1 border-start-0 border-end-0 py-3 my-5 m-md-5" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
         <div class="container-fluid">
             <div class="sponsor-imgs">
                 <div class="sponsor-img one">
@@ -642,7 +648,7 @@
         </div>
     </section>
 
-    <footer class="footer py-3 my-5 p-md-2">
+    <footer class="footer py-3 my-5 p-md-2" data-aos="fade-in" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="200">
         <div class="container-fluid pb-5">
             <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 footer-link">
                 <div class="col">
@@ -687,14 +693,39 @@
             </div>
         </div>
     </footer>
+    <div class="loader">
+        <div id="spinner">
+            <img src="/images/ajax-loader.gif" alt="" height="50px">
+        </div>
+    </div>
+
 
     
-
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  "#spinner").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  "#spinner").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+    </script>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     <script src="/js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
     <!-- <script src="/js/swiper.js"></script> -->
   

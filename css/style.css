@@ -261,11 +261,11 @@
 .navBtn1 {
     position: relative;
     display: block;
-    width: 32px;
+    width: 22px;
     height: 32px;
     margin: 0;
     text-align: center;
-    outline: none !important;
+    border: 1px solid black;
 }
 .navBtn1 .bar {
     display: block;
@@ -294,6 +294,15 @@
 
 .navBtn1:hover .bar:nth-child(2) {
     left: 5px;
+}
+
+
+#spinner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -361,7 +370,7 @@
     }
 
     .image-info{
-        height: 50vh;
+        height: 45vh;
     }
 
     .cata-info{
@@ -370,13 +379,13 @@
 
     .product swiper-container,
     .products swiper-container {
-    height: 65vh;
+    height: 60vh;
     }
 
     .product-card,
     .product swiper-slide img,
     .products swiper-slide img{
-        height: 50vh;
+        height: 45vh;
     }
 
     .products swiper-slide img{
@@ -388,12 +397,11 @@
     }
 
     .catalogues swiper-container {
-        height: 65vh;
+        height: 58vh;
     }
 
     .hero-one{
         height: calc(100vh - 90px);
-        background-position: center center; 
     }
 
     .banner-content{
