@@ -1,21 +1,59 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+const swiperEl = document.querySelector('.product swiper-container')
+    Object.assign(swiperEl, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1000: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+    });
+    swiperEl.initialize();
+
+const swiperEls = document.querySelector('.products swiper-container')
+    Object.assign(swiperEls, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1000: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+    });
+    swiperEls.initialize();
+
+const swiperElCat = document.querySelector('.catalogues swiper-container')
+    Object.assign(swiperElCat, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1050: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+    });
+    swiperElCat.initialize();
