@@ -332,6 +332,15 @@ swiper-container {
         font-size: 16px;
     }
 
+    .banner-content{
+        padding: 0;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -358,14 +367,7 @@ swiper-container {
         height: calc(100vh - 90px);
     }
 
-    .banner-content{
-        padding: 0;
-        height: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
+    
 
     .about-image{
         height: 60vh;
